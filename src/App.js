@@ -1,3 +1,4 @@
+import IdClients from './components/ClientsId';
 
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <div>
       <header>
         <h2>Desafio Ultracar</h2>
+        <IdClients />
       </header>
     </div>
   );
