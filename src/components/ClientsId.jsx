@@ -1,10 +1,34 @@
 import React from 'react';
+import { clientes } from '../mocks/clientes';
+
 
 function IdClients() {
+
+  const [cliente, setCliente] = React.useState(null);
+  const [qrCode, setQrCode] = React.useState("");
+
+  function handleQrCode(qrCode) {
+    setQrCode(qrCode);
+
+    const clienteEncontrado = clientes.find((cliente) => cliente.qrCode === qrCode);
+    if (clienteEncontrado) {
+      setCliente(clienteEncontrado);
+    }
+  }
+
   return (
     <div>
-      <h1>Identificação do cliente</h1>
-      <form>
+      <h2>Identificação do cliente</h2>
+      <label htmlFor="qrCode">Leitura do QRCode</label>
+      <input
+        id="qrCode"
+        type="text"
+        value={qrCode}
+        onChange={(event) => handleQrCode(event.target.value)}
+      />
+      {
+        cliente && (
+            <form>
         <label htmlFor="name">Nome</label>
         <input type="text" id="name" name="name" />
         <label htmlFor="email">Email</label>
@@ -20,7 +44,8 @@ function IdClients() {
           <option value="SP">São Paulo</option>
         </select>
       </form>
-      
+        )
+      }
     </div>
   );
 }
