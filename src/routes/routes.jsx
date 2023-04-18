@@ -1,17 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
-import Login from '../components/Login';
-import Cadastro from '../components/Cadastro';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from '../pages/Login';
+import Cadastro from '../pages/Cadastro';
+import Home from '../pages/Home';
 
 
-function Routes() {
+function Router() {
   return (
     <BrowserRouter>
-      {/* <Route path="/" exact component={Home} /> */}
-      <Route path="/login" component={Login} />
-      <Route path="/cadastro" component={Cadastro} />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={ <Home /> } />
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Routes>
     </BrowserRouter>
   )
 }
 
-export default Routes;
+export default Router;
