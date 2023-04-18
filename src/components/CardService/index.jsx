@@ -1,12 +1,13 @@
 import React from 'react';
+import { CardContainerStyle, CardImage, CradTitle, CardDescriptionStyle } from './style';
 
 function ServiceCard(props) {
   return (
-    <div className="card">
-      <img src={props.img} alt={props.alt} />
-      <h3>{props.name}</h3>
-      <p>{props.description}</p>
-    </div>
+    <CardContainerStyle className="card">
+      <CardImage src={props.img} alt={props.alt} />
+      <CradTitle>{props.name}</CradTitle>
+      <CardDescriptionStyle>{props.description}</CardDescriptionStyle>
+    </CardContainerStyle>
   );
 }
 
