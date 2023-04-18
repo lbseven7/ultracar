@@ -1,15 +1,14 @@
 import React from 'react';
-import { SideBarContainer, SidebarHeading, SidebarLink } from './style';
-
+import { LinkStyle, SideBarContainer } from './style';
+import Logo from '../../assets/images/cabecalho.png';
 
 function SideBar() {
   return (
     <SideBarContainer>
-      <SidebarHeading>Menu de Links</SidebarHeading>
-      <SidebarLink to="/">1</SidebarLink>
-      <SidebarLink to="/">2</SidebarLink>
-      <SidebarLink to="/">3</SidebarLink>
-      <SidebarLink to="/">4</SidebarLink>
+        <img src={Logo} alt="Logo" />
+        <LinkStyle to="/home">Home</LinkStyle>
+        <LinkStyle to="/cadastro">Cadastrar</LinkStyle>
+        <LinkStyle to="/">Buscar</LinkStyle>
     </SideBarContainer>
   )
 }
