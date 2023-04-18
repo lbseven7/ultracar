@@ -1,5 +1,12 @@
 import React from 'react';
 import ServiceCard from '../CardService';
+import styled from 'styled-components';
+
+const ServicesContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
 const services = [
   {
@@ -21,7 +28,7 @@ const services = [
 
 function Services() {
   return (
-    <div className="services-container">
+    <ServicesContainer className="services-container">
       {services.map((service, index) => (
         <ServiceCard
           key={index}
@@ -31,7 +38,7 @@ function Services() {
           description={service.description}
         />
       ))}
-    </div>
+    </ServicesContainer>
   )
 }
 

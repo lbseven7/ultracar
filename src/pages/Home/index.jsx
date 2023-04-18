@@ -4,7 +4,7 @@ import Services from '../../components/Services';
 function Home() {
   return (
     <>
-      <h1>Home da Ultracar</h1>
+      <h1>Serviços Oferecidos Pela Ultracar</h1>
       <Services />
     </>
   );
