@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/images/Logo Nova-04.png';
+import Logo from '../../assets/images/cabecalho.png';
 import ContainerStyle from './style';
 
 function Header() {
