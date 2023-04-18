@@ -28,6 +28,12 @@ import styled from 'styled-components';
       cursor: pointer;
       font-size: 1.2rem;
     }
+
+    > a {
+      text-decoration: none;
+      color: #1490c5;
+      font-size: 1.2rem;
+    }
 `;
 
 export default FormStyle;

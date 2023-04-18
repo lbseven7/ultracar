@@ -52,22 +52,29 @@ function Login() {
   return (
     <>
       <FormStyle>
-      <h2>Cliente já cadastrado?</h2>
-        <label htmlFor="name"> Nome </label>
+      <h2>Buscar cliente</h2>
+        {/* <label htmlFor="name"> Buscar cliente por Nome </label> */}
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Digite o nome do cliente"
         />
-        <label htmlFor="qrcode"> QRCode </label>
-        <input
+        {/* <label htmlFor="qrcode"> Pelo QRCode </label> */}
+        {/* <input
           type="qrcode"
           id="qrcode"
           name="qrcode"
           placeholder="Digite o QRCode do cliente"
-        />
-        <button type="submit">Enviar</button>
+        /> */}
+        <button type="submit">Buscar Cliente</button>
+
+        <a
+          href='https://mail.google.com/chat/u/0/#chat/space/AAAACfnje_s'
+          target='_blank'
+          rel="noreferrer">
+          Cadastrar Novo
+        </a>
       </FormStyle>
     </>
   );
