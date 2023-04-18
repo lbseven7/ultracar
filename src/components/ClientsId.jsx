@@ -1,5 +1,5 @@
 import React from 'react';
-// import clientes from '../mocks/clientes';
+import Form from './formStyle';
 
 
 function IdClients() {
@@ -50,17 +50,26 @@ function IdClients() {
    ]
 
   return (
-    <div>
+    <>
+      <Form>
       <h2>Cliente já cadastrado?</h2>
-   
-      <form>
-        <label htmlFor="name"> Nome </label>
-        <input type="text" id="name" name="name"/>
-        <label htmlFor="qrcode"> QRCode </label>
-        <input type="qrcode" id="qrcode" name="qrcode" />
+        {/* <label htmlFor="name"> Nome </label> */}
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite o nome do cliente"
+        />
+        {/* <label htmlFor="qrcode"> QRCode </label> */}
+        <input
+          type="qrcode"
+          id="qrcode"
+          name="qrcode"
+          placeholder="Digite o QRCode do cliente"
+        />
         <button type="submit">Enviar</button>
-      </form>
-    </div>
+      </Form>
+    </>
   );
 }
 
