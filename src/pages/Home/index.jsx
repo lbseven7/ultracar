@@ -1,14 +1,18 @@
 import React from 'react';
 import Services from '../../components/Services';
-import Header from '../../components/Header';
 import { ContainerStyle } from './style';
+import SideBar from '../../components/Sidebar';
 
 function Home() {
   return (
     <ContainerStyle>
-      <Header />
-      <h1>Serviços Oferecidos Pela Ultracar</h1>
-      <Services />
+      <main>
+        <SideBar />
+        <div>
+          <h1>Serviços Oferecidos Pela Ultracar</h1>
+          <Services />
+        </div>
+      </main>
     </ContainerStyle>
   );
 }
