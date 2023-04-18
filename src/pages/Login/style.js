@@ -5,7 +5,7 @@ import styled from 'styled-components';
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin: auto;
   padding: 16px;
   gap: 16px;
@@ -16,7 +16,7 @@ import styled from 'styled-components';
       padding: 16px;
       outline: 1px solid #d8e7fa;
       border: none;
-      width: 35%;
+      width: 25rem;
     }
 
     > button {
@@ -24,9 +24,14 @@ import styled from 'styled-components';
       color: #fff;
       padding: 16px;
       border: none;
-      width: 38.5%;
+      width: 25rem;
       cursor: pointer;
       font-size: 1.2rem;
+    }
+
+    > h2 {
+      font-size: 1.5rem;
+      color: #a6a6a6;
     }
 
     > a {
@@ -35,10 +40,7 @@ import styled from 'styled-components';
       font-size: 1.2rem;
     }
 
-    > h2 {
-      font-size: 1.5rem;
-      color: #1490c5;
-    }
+
 `;
 
 export default FormStyle;
