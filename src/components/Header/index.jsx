@@ -1,9 +1,10 @@
 import React from 'react';
+import Logo from '../Logo';
 
 function Header() {
   return (
     <>
-      <h1>Header</h1>
+       <Logo />
     </>
   );
 }
