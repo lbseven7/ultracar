@@ -1,13 +1,11 @@
+import Header from './components/Header';
 import Login from './components/Login';
-import Logo from './components/Logo/index';
 
 function App() {
   return (
     <div>
-      <header>
-        <Logo />
-        <Login />
-      </header>
+      <Header />
+      <Login />
     </div>
   );
 }
