@@ -9,7 +9,7 @@ function Cadastro() {
       <Header />
       <FormStyle>
       <h2>Cadastrar novo cliente</h2>
-        <label htmlFor="name"> Nome </label>
+        {/* <label htmlFor="name"> Nome </label> */}
         <input
           type="text"
           id="name"

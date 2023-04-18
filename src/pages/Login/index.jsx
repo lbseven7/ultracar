@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 import FormStyle from './style';
+import Header from '../../components/Header';
 
 
 function Login() {
@@ -52,6 +53,7 @@ function Login() {
 
   return (
     <>
+      <Header />
       <FormStyle>
       <h2>Buscar cliente</h2>
         {/* <label htmlFor="name"> Buscar cliente por Nome </label> */}
