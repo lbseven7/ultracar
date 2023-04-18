@@ -1,10 +1,11 @@
-import Login from './components/login';
+import Login from './components/Login';
+import Logo from './components/Logo/index';
 
 function App() {
   return (
     <div>
       <header>
-        <h2>Logo</h2>
+        <Logo />
         <Login />
       </header>
     </div>
