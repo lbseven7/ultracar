@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './formStyle';
+import FormStyle from './style';
 
 
 function Login() {
@@ -51,16 +51,16 @@ function Login() {
 
   return (
     <>
-      <Form>
+      <FormStyle>
       <h2>Cliente já cadastrado?</h2>
-        {/* <label htmlFor="name"> Nome </label> */}
+        <label htmlFor="name"> Nome </label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Digite o nome do cliente"
         />
-        {/* <label htmlFor="qrcode"> QRCode </label> */}
+        <label htmlFor="qrcode"> QRCode </label>
         <input
           type="qrcode"
           id="qrcode"
@@ -68,7 +68,7 @@ function Login() {
           placeholder="Digite o QRCode do cliente"
         />
         <button type="submit">Enviar</button>
-      </Form>
+      </FormStyle>
     </>
   );
 }
