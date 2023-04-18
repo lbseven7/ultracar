@@ -1,12 +1,11 @@
-import Header from './components/Header';
-// import Home from './components/Home';
-import Login from './components/Login';
+import Router from './routes/routes';
+import GlobalStyle from './StyleGlobal/GlobalStyle';
 
 function App() {
   return (
     <div>
-      <Header />
-      <Login />
+      <GlobalStyle />
+      <Router />
     </div>
   );
 }
