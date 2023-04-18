@@ -1,12 +1,13 @@
 import React from 'react';
+import { Container } from './style';
 
 
 function SideBar() {
   return (
-    <div>
+    <Container>
       <h1>SideBar</h1>
-      
-    </div>
+
+    </Container>
   )
 }
 
