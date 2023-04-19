@@ -19,7 +19,7 @@ function Cadastro() {
     
         <button type="submit">Cadastrar Cliente</button>
 
-        <Link to="/home">Voltar</Link>
+        <Link to="/">Voltar</Link>
 
       </FormStyle>
     </>

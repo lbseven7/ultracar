@@ -6,9 +6,9 @@ function SideBar() {
   return (
     <SideBarContainer>
         <img src={Logo} alt="Logo" />
-        <LinkStyle to="/home">Home</LinkStyle>
+        <LinkStyle to="/">Home</LinkStyle>
         <LinkStyle to="/cadastro">Cadastrar</LinkStyle>
-        <LinkStyle to="/">Buscar</LinkStyle>
+        <LinkStyle to="/cadastro">Buscar</LinkStyle>
     </SideBarContainer>
   )
 }
