@@ -9,7 +9,7 @@ function Services() {
       {services.map((service, index) => (
         <ServiceCard
           key={index}
-          img={service.img}
+          img={service.image}
           alt={service.alt}
           name={service.name}
           description={service.description}
