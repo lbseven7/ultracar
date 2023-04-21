@@ -1,6 +1,4 @@
-import { DefaultTheme } from 'styled-components';
-
-export const defaultTheme: DefaultTheme = {
+export const defaultTheme = {
   name: 'Masspay',
   colors: {
     primary1_110: '#0076B6',

@@ -3,6 +3,7 @@ import Services from '../../components/Services';
 import { ContainerStyle } from './style';
 import SideBar from '../../components/Sidebar';
 
+
 function Home() {
   return (
     <ContainerStyle>
